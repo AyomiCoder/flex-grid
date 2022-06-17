@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container{
+    display: flex;
+   /*  grid-template-columns: repeat(3, 1fr); */
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 7%;
+    animation: slideInUp;
+    animation-duration: 2s;
+    
+}
+
+.grid-btn{
+    background-color: black;
+    min-width: 130px;
+    height: 40px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid hsl(0, 0%, 0%);
+    margin-top: 3%;
+    margin-left: 20%;
+    animation: fadeIn;
+    animation-duration: 3s;
+}
+
+.grid-btn:hover {
+    background: transparent;
+    /* color: rgb(255, 255, 255); */
+  }
+
+  .grid-btn a{
+    text-decoration: none;
+    color: hsl(0, 0%, 95%);
+    font-size: 1rem;
+  }
+
+  .grid-btn a:hover{
+    color: black;
+  }
+
+
+.box1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+    height: 26rem;
+}
+.box2{
+    background-color: hsl(184, 100%, 22%);
+    height: 26rem;
+}
+.box3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+    height: 26rem;
+}
+
+img{
+    margin-left: 12%;
+    margin-top: 10%;
+}
+
+h1{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    margin-left: 12%;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    width: 60%;
+    margin-left: 12%;
+    font-size: 15px;
+}
+
+.btn{
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    margin-left: 12%;
+    margin-top: 15%;
+    min-width: 130px;
+    height: 40px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.btn:hover {
+    background: transparent;
+    color: hsl(0, 0%, 95%);
+  }
+
+.sedan{
+    color: hsl(31, 77%, 52%);
+}
+
+.suv{
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury{
+    color: hsl(179, 100%, 13%);
+}
+
+
+/* GRID */
+
+
+.grid-cons {
+    margin-top: 4%;
+    display: grid; 
+ 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+    gap: 7px;
+    height: 100%;
+    margin-left: 25%;
+    margin-right: 25%;
+    
+ }
+   
+ .item-0 {
+ 
+    background-color: #F15412; 
+    color: #F15412;
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 3;
+    grid-column-end: 4;
+    height: 15rem;
+    
+ }
+ .item-1 {
+ 
+    background-color: #FFA500; 
+    color: #FFA500;
+    grid-row-start: 1;
+    grid-column-start: 4;
+    height: 15rem;;
+ 
+    grid-row-end: 3;
+    grid-column-end: 6;
+    
+ }
+ .item-2 {
+ 
+    background-color: #3EC70B; 
+    color: #3EC70B;
+    grid-row-start: 3;
+    grid-column-start: 1;
+ 
+    grid-row-end: 5;
+    grid-column-end: 3;
+    height: 15rem;;
+    
+ }
+ .item-3 {
+ 
+    background-color: #34B3F1; 
+    color: #34B3F1;
+    grid-row-start: 3;
+    grid-column-start: 3;
+ 
+    grid-row-end: 4;
+    grid-column-end: 6;
+    height: 7.5rem;
+    
+ }
+ .item-4 {
+ 
+    background-color: #34B3F1; 
+    color: #34B3F1;
+    grid-row-start: 4;
+    grid-column-start: 3;
+ 
+    grid-row-end: 5;
+    grid-column-end: 6;
+    height: 7.2rem;
+ }
+
+
+
+@media(max-width: 375px){
+    .container{
+        flex-direction: column;
+        margin-right: 11%;
+        margin-left: 11%;
+        animation: fadeIn;
+        animation-duration: 2s;
+    }
+
+    .box1{
+        border-radius: 10px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .box2{
+        border-radius: 10px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .box3{
+        border-radius: 10px;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    .grid-cons{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
